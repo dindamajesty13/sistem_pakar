@@ -10,11 +10,11 @@ sedangkan C bernilai True apabila A dan B True, dan nilai A, B sudah diketahui y
 
 contoh:
 misalkan situasi:
-R1: if A and C then E
-R2: if D and C then F
-R3: if B and E then F
-R4: if B then C
-R5: if F then G
+1. R1: if A and C then E
+2. R2: if D and C then F
+3. R3: if B and E then F
+4. R4: if B then C
+5. R5: if F then G
 
 fakta A dan B bernilai True.
 forward chaining (R4-R1-R3-R5)
