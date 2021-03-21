@@ -16,6 +16,7 @@ graph = {'0': set(['1', '2', '3']),
 kita akan melihat bagaimana algoritma dfs bekerja dan mengetahui urutan node yang dikunjungi/dilalui oleh algoritma dfs. Dengan algoritma dfs kita akan memulai dengan vertex 0 sebagai node list pertama yang akan dikunjungi (expand node), lalu kita akan melihat apakah 0 memiliki anak (turunan) atau tidak, jika ya maka turunannya akan kita masukkan ke node list  yang akan kita expand. Ternyata 0 memiliki expand node yaitu 1, 2, dan 3. Selanjutnya kita akan lakukan expand pada node 1 dan node 1 tidak memiliki turunan. Setelah node 1 kita akan expand node 2, dan kita menemukan node 4 sebagai turunannya (kita tambahkan 4 ke node list paling atas), selanjutnya karena 4 berada di tumpukan paling atas maka kita expand node 4, kita tidak menemukan turunannya. Terakhir kita expand node 3 dan tidak menemukan turunannya.
 
 berikut simulasi:
+
     langkah 1
     visited = 0
     stack = 1, 2, 3
@@ -41,6 +42,7 @@ sehingga DFS memiliki urutan kunjungan 0, 1, 2, 4, 3 karena node yang didapatkan
 BFS algorithm
 kita menggunakan contoh yang sama dengan algoritma dfs diatas. perbedaannya yaitu terdapat pada penempatan stack, jika pada DFS stack ditempatkan paling atas (paling depan) sedangkan pada BFS stack yang baru ditemukan diletakkan paling bawah (paling belakang) seperti sistem antrian. Sehingga urutan kunjungan (visited) BFS dan DFS akan berbeda.
 berikut simulasi:
+
     langkah 1
     visited = 0
     stack = 1, 2, 3
