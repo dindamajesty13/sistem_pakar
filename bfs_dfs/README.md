@@ -1,13 +1,14 @@
 Pembahasan contoh DFS dan BFS algorithm
 
 DFS algorithm
-contohnya, disini kita memiliki lima simpul yaitu (0, 1, 2, 3, 4) lalu kita buat graph seperti pada kode dibawah ini
+contohnya, disini kita memiliki lima simpul yaitu (0, 1, 2, 3, 4) lalu kita buat graph seperti pada kode dibawah ini:
+```sh
 graph = {'0': set(['1', '2', '3']),
          '1': set(['0']),
          '2': set(['0', '1', '4']),
          '3': set(['0']),
          '4': set(['2'])}
-
+```
 ![graph](https://user-images.githubusercontent.com/44759037/111896184-38cb6980-8a4a-11eb-8994-37ab74ca18d5.PNG)
 
 kita akan melihat bagaimana algoritma dfs bekerja dan mengetahui urutan node yang dikunjungi/dilalui oleh algoritma dfs. Dengan algoritma dfs kita akan memulai dengan vertex 0 sebagai node list pertama yang akan dikunjungi (expand node), lalu kita akan melihat apakah 0 memiliki anak (turunan) atau tidak, jika ya maka turunannya akan kita masukkan ke node list  yang akan kita expand. Ternyata 0 memiliki expand node yaitu 1, 2, dan 3. Selanjutnya kita akan lakukan expand pada node 1 dan node 1 tidak memiliki turunan. Setelah node 1 kita akan expand node 2, dan kita menemukan node 4 sebagai turunannya (kita tambahkan 4 ke node list paling atas), selanjutnya karena 4 berada di tumpukan paling atas maka kita expand node 4, kita tidak menemukan turunannya. Terakhir kita expand node 3 dan tidak menemukan turunannya.
