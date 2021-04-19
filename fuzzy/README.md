@@ -1,0 +1,1 @@
+Menggunakan dataset heart dan melakukan klasifikasi apakah seseorang dengan karakteristik tertentu akan terserang penyakit jantung atau tidak. Jika hasil menunjukkan angka 1 maka orang tersebut memiliki resiko terserang penyakit jantung, jika 0 maka orang tersebut tidak memiliki resiko terserang penyakit jantung. Pengklasifikasian dilakukan dengan menggunakan metode Naive Bayes.
